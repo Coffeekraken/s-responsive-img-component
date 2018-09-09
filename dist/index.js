@@ -1,0 +1,13 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _SResponsiveImgComponent = require('./js/SResponsiveImgComponent');
+
+var _SResponsiveImgComponent2 = _interopRequireDefault(_SResponsiveImgComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _SResponsiveImgComponent2.default.define('s-responsive-img', _SResponsiveImgComponent2.default, 'img');
