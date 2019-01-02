@@ -29,6 +29,8 @@
 
 Provide a nice way to make images responsive without using srcset and sizes attributes.
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-responsive-img-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-responsive-img-component)**
