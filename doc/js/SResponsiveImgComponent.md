@@ -3,7 +3,7 @@
 Provide a nice way to make images responsive without using srcset and sizes attributes.
 Register a preset first
 ```js
-SResponsiveImgComponent.registerPreset('banner', {
+SResponsiveImgComponent.registerPreset('default', {
   widths: [{
     width: 340,
     name: 'mobile',
@@ -25,7 +25,7 @@ SResponsiveImgComponent.registerPreset('banner', {
 
 ### Example
 ```html
-	<img lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" is="s-responsive-img" preset="banner" />
+	<img lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" is="s-responsive-img" />
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
 
@@ -44,7 +44,7 @@ Specify a registered preset to use as properties
 
 Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) }**
 
-Default : **null**
+Default : **default**
 
 
 ### dataSrc

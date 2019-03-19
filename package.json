@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-responsive-img-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provide a nice way to make images responsive without using srcset and sizes attributes.",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",

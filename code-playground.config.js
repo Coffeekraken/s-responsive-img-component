@@ -27,7 +27,7 @@ module.exports = {
         <p class="p m-b-bigger">
           Provide a nice way to make images responsive without using srcset and sizes attributes.
         </p>
-        <img is="s-responsive-img" preset="banner" lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" />
+        <img is="s-responsive-img" lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" />
       `
     },
     css: {
@@ -50,7 +50,7 @@ module.exports = {
       language: 'js',
       data: `
         import SResponsiveImgComponent from './dist/index'
-        SResponsiveImgComponent.registerPreset('banner', {
+        SResponsiveImgComponent.registerPreset('default', {
           widths: [{
             width: 340,
             name: 'mobile',

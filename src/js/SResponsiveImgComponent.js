@@ -8,7 +8,7 @@ const __responsiveProperties = {}
  * Provide a nice way to make images responsive without using srcset and sizes attributes.
  * Register a preset first
  * ```js
- * SResponsiveImgComponent.registerPreset('banner', {
+ * SResponsiveImgComponent.registerPreset('default', {
  *   widths: [{
  *     width: 340,
  *     name: 'mobile',
@@ -28,7 +28,7 @@ const __responsiveProperties = {}
  * })
  * ```
  * @example    html
- * <img lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" is="s-responsive-img" preset="banner" />
+ * <img lazy-src="https://assets.imgix.net/hp/snowshoe.jpg" is="s-responsive-img" />
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
@@ -54,7 +54,7 @@ export default class SResponsiveImgComponent extends __native(window.HTMLImageEl
        * @prop
        * @type    {String}
        */
-      preset: null,
+      preset: 'default',
 
       /**
        * Store the available widths object for this image in an array.
