@@ -145,6 +145,7 @@ var SResponsiveImgComponent = function (_native) {
     value: function _applySrc() {
       // calculate the width of the image
       var imageWidth = this.offsetWidth;
+      var imageHeight = this.offsetHeight;
       var appliedWidth = this.props.widths[0] || 0;
 
       // grab the best available width
@@ -164,8 +165,9 @@ var SResponsiveImgComponent = function (_native) {
         appliedWidth.name = appliedWidth.width.toString();
       }
 
-      // set the exactWidth property
+      // set the exactWidth and exactHeight property
       appliedWidth.exactWidth = imageWidth;
+      appliedWidth.exactHeight = imageHeight;
 
       // check pixel ratios
       if (window.devicePixelRatio && appliedWidth.pixelRatios) {
