@@ -173,6 +173,7 @@ export default class SResponsiveImgComponent extends __native(window.HTMLImageEl
   _applySrc () {
     // calculate the width of the image
     const imageWidth = this.offsetWidth
+    const imageHeight = this.offsetHeight
     let appliedWidth = this.props.widths[0] || 0
 
     // grab the best available width
@@ -192,8 +193,9 @@ export default class SResponsiveImgComponent extends __native(window.HTMLImageEl
       appliedWidth.name = appliedWidth.width.toString()
     }
 
-    // set the exactWidth property
+    // set the exactWidth and exactHeight property
     appliedWidth.exactWidth = imageWidth
+    appliedWidth.exactHeight = imageHeight
 
     // check pixel ratios
     if (window.devicePixelRatio && appliedWidth.pixelRatios) {
